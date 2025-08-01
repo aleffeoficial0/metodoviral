@@ -1,0 +1,410 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background: #0f0f0f;
+  color: #f4c23d;
+  line-height:1.6;
+}
+
+header {
+  background: linear-gradient(to bottom right, #111111, #11111100);
+  text-align: center;
+  padding: 4rem 2rem;
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: white;
+  }
+}
+.video-section {
+  padding: 2rem;
+  text-align: center;
+
+  iframe {
+    width: 90%;
+    max-width: 600px;
+    height: 340px;
+    border-radius: 12px;
+    border: none;
+  }
+
+  .video-caption {
+    color: #fbff04;
+    font-size: 1.2rem;
+    span {
+      color: white;
+    }
+  }
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background: #ff0050;
+  padding: 1rem 2rem;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta-button-gold {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background: linear-gradient(135deg, #ffd700, #f4c23d);
+  color: #000;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+  transition: background 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    background: linear-gradient(135deg, #f4c23d, #e6be00);
+    transform: scale(1.05);
+  }
+}
+
+.benefits {
+  background: #1a1a1a;
+  padding: 3rem 1rem;
+  text-align: center;
+  color: #fff;
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: #f4c23d;
+  }
+}
+
+.screenshot-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 1rem;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+
+  .screenshot {
+    width: auto;
+    height: 400px;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    object-fit: contain;
+    flex-shrink: 0;
+    display: block;
+
+    &:hover {
+      transform: scale(1.06);
+    }
+  }
+}
+
+.benefits-cards {
+  background: #0d0d0d;
+  color: #fff;
+  padding: 4rem 1.5rem;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+  }
+
+  .highlight {
+    color: #f4c23d;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .benefit-card {
+    background: #1a1a1a;
+    border-radius: 16px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 0 0 1px #333;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: translateY(-5px);
+    }
+    img {
+      width: auto;
+      max-width: 100px;
+      height: auto;
+      margin-bottom: 1.2rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 12px;
+      background-color: #191919;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      color: #f4c23d;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #eaeaea;
+    }
+  }
+}
+
+.mentor-section {
+  background-color: #111;
+  padding: 4rem 2rem;
+  color: #fff;
+
+  .mentor-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    
+
+    .mentor-image img {
+      width: 100%;
+      height: 100%;
+      max-width: 300px;
+      border-radius: 16px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    .mentor-text {
+      flex: 1;
+      min-width: 280px;
+      max-width: 600px;
+      text-align: left;
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #f4c23d;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+header > h1 {
+  color: #f4c23d;
+text-align: center;
+}
+
+header > img {
+  border-radius: 16px;
+  width: 300px;
+  margin: 15px;
+}
+
+.form-section {
+  padding: 3rem 2rem;
+  background: #000;
+  text-align: center;
+}
+
+#signup-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  input,
+  button {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+  }
+  button {
+    background: #ff0050;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.disclaimer {
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 1rem;
+}
+
+footer {
+  background: #111;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.form-section {
+  padding: 3rem 2rem;
+  background: #000;
+  text-align: center;
+  h2 {
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+  }
+}
+
+.course-offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.course-image {
+  width: 100%;
+  max-width: 320px;
+  border: 3px solid #ffd700;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.2);
+  padding: 8px;
+  background: linear-gradient(145deg, #1a1a1a, #000);
+}
+
+.course-info .course-price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fbff04;
+  margin: 0;
+  .cta-button {
+    margin-top: 1rem;
+    background: #ff0050;
+    padding: 1rem 2rem;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 2rem 1rem;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .video-section iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  .video-caption {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .cta-button,
+  .cta-button-gold {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  .benefits h2,
+  .benefits-cards h2 {
+    font-size: 1.6rem;
+    padding: 0 1rem;
+  }
+
+  .screenshot-gallery .screenshot {
+    height: 240px;
+  }
+
+  .mentor-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mentor-text {
+    text-align: center;
+  }
+
+  .mentor-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .mentor-text p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  header > img {
+    width: 90%;
+    height: auto;
+  }
+
+  .benefit-card {
+    padding: 1.5rem;
+  }
+
+  .benefit-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .benefit-card p {
+    font-size: 0.95rem;
+  }
+
+  .form-section h2 {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .course-offer {
+    gap: 16px;
+  }
+
+  .course-price {
+    font-size: 1.5rem;
+  }
+
+  .course-image {
+    max-width: 90%;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+}
