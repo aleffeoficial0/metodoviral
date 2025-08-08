@@ -94,19 +94,21 @@ header {
   overflow-x: auto;
   flex-wrap: nowrap;
   scroll-behavior: smooth;
+}
 
-  .screenshot {
-    width: auto;
-    height: 400px;
-    border-radius: 16px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
-    object-fit: contain;
-    flex-shrink: 0;
-    display: block;
+/* Screens smaller than 600px (phones) */
+@media (max-width: 600px) {
+  .screenshot-gallery {
+    flex-wrap: wrap; /* allow wrapping */
+    overflow-x: visible; /* no horizontal scroll */
+    justify-content: center;
+  }
 
-    &:hover {
-      transform: scale(1.06);
-    }
+  .screenshot-gallery .screenshot {
+    height: auto; /* automatic height */
+    max-width: 100%; /* scale images to container width */
+    flex
+ }
   }
 }
 
